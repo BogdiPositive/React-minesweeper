@@ -1,0 +1,36 @@
+@import "../../style/mixins.scss";
+
+.App {
+  background-color: #c2c2c2;
+  padding: 16px;
+  @include borders(white, #999);
+}
+
+.Header {
+  @include borders(#7b7b7b, white);
+  background: #c0c0c0;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Body {
+  @include borders(#7b7b7b, white);
+  margin-top: 16px;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.Face {
+  @include borders(white, #7b7b7b);
+  @include buttons;
+  width: 52px;
+  height: 52px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
